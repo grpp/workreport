@@ -1,0 +1,31 @@
+{
+  "name": "workreport",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grpp/workreport.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grpp/workreport/issues"
+  },
+  "homepage": "https://github.com/grpp/workreport#readme",
+  "dependencies": {
+    "bower": "^1.7.0",
+    "gulp": "^3.9.0",
+    "gulp-install": "^0.6.0",
+    "gulp-rimraf": "^0.2.0"
+  },
+  "devDependencies": {
+    "gulp-jshint": "^2.0.0",
+    "jshint": "^2.8.0",
+    "jshint-stylish": "^2.1.0",
+    "rimraf": "^2.4.4"
+  }
+}

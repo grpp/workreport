@@ -1,0 +1,21 @@
+{
+  "name": "workreport",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Nathan Law"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/grpp/workreport",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Snap.svg": "snap.svg#~0.4.1"
+  }
+}

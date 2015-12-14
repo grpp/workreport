@@ -100,13 +100,12 @@ gulp.task('reload-site', function(){
 		.pipe(connect.reload());
 });
 
-gulp.task('start-server', function(cb){
-	connect.server({
+gulp.task('start-server', function(){
+	return connect.server({
 		port: 8765,
 		root: folder.build,
 		livereload: true
 	});
-	cb();
 });
 
 gulp.task('debug-watch', ['start-server'], function(){
@@ -115,8 +114,8 @@ gulp.task('debug-watch', ['start-server'], function(){
 	// Add watch for html files using html-hint
 });
 
-gulp.task('debug-lint:js', function(cb){
-	gulp.src('./src/**/*.js')
+gulp.task('debug-lint:js', function(){
+	return gulp.src('./src/**/*.js')
 		.pipe(jshint({
 			undef: true,
 			unused: "vars",
@@ -126,15 +125,11 @@ gulp.task('debug-lint:js', function(cb){
 		.on('error', gutil.log)
 		.pipe(jshint.reporter('jshint-stylish'))
 		.on('error', gutil.log);
-
-	cb();
 });
 
-gulp.task('debug-build', ['debug-lint:js'], function(cb){
-	gulp.src(files.srcDir)
+gulp.task('debug-build', ['debug-lint:js'], function(){
+	return gulp.src(files.srcDir)
 		.pipe(gulp.dest(folder.build));
-
-	cb();
 });
 
 gulp.task('debug-reload', ['debug-lint:js', 'debug-build'], function(){

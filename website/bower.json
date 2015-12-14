@@ -17,6 +17,7 @@
   ],
   "dependencies": {
     "Snap.svg": "snap.svg#~0.4.1",
-    "fabric.js": "fabric#~1.5.0"
+    "fabric.js": "fabric#~1.5.0",
+    "jquery": "~2.1.4"
   }
 }

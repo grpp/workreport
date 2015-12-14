@@ -43,7 +43,8 @@ var folder = {
 	Dev evironment.
 */
 var jsGlobals = {
-	console: false
+	console: false,
+	$: false
 }
 
 // Gulp task
@@ -109,13 +110,13 @@ gulp.task('start-server', function(){
 });
 
 gulp.task('debug-watch', ['start-server'], function(){
-	gulp.watch('./src/**/*.js', ['debug-lint:js', 'debug-build', 'debug-reload']);
+	gulp.watch(['./src/**/*.js', '!./src/thirdParty/**/*'], ['debug-lint:js', 'debug-build', 'debug-reload']);
 	gulp.watch('./src/**/*.html', ['debug-build:html','debug-reload']);
 	// Add watch for html files using html-hint
 });
 
 gulp.task('debug-lint:js', function(){
-	return gulp.src('./src/**/*.js')
+	return gulp.src(['./src/**/*.js', '!./src/thirdParty/**/*'])
 		.pipe(jshint({
 			undef: true,
 			unused: "vars",

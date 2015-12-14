@@ -110,7 +110,7 @@ gulp.task('start-server', function(){
 
 gulp.task('debug-watch', ['start-server'], function(){
 	gulp.watch('./src/**/*.js', ['debug-lint:js', 'debug-build', 'debug-reload']);
-
+	gulp.watch('./src/**/*.html', ['debug-build:html','debug-reload']);
 	// Add watch for html files using html-hint
 });
 
@@ -129,6 +129,11 @@ gulp.task('debug-lint:js', function(){
 
 gulp.task('debug-build', ['debug-lint:js'], function(){
 	return gulp.src(files.srcDir)
+		.pipe(gulp.dest(folder.build));
+});
+
+gulp.task('debug-build:html', function(){
+	return gulp.src('./src/**/*.html')
 		.pipe(gulp.dest(folder.build));
 });
 

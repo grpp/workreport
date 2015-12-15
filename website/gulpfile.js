@@ -44,7 +44,9 @@ var folder = {
 */
 var jsGlobals = {
 	console: false,
-	$: false
+	$: false,
+	fabric: false,
+	Snap: false
 }
 
 // Gulp task

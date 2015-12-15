@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"circle",
+				"circle"
+			],
+			[
+				"third",
+				"thirdParty"
+			],
+			[
 				"findInst",
 				"findInstancesOfTemplate"
 			],
@@ -506,40 +514,24 @@
 			[
 				"moveS",
 				"movingSegment"
-			],
-			[
-				"disabl",
-				"disabledPinCommand"
-			],
-			[
-				"start",
-				"startCommand"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "website/gulpfile.js",
+			"file": "website/src/index.html",
 			"settings":
 			{
-				"buffer_size": 1621,
+				"buffer_size": 407,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/gulpfile.js",
-			"settings":
-			{
-				"buffer_size": 18379,
-				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "website/src/js/test.js",
 			"settings":
 			{
-				"buffer_size": 10,
+				"buffer_size": 485,
 				"line_ending": "Windows"
 			}
 		}
@@ -593,14 +585,17 @@
 	"expanded_folders":
 	[
 		"/C/code/workreport/workreport/website",
-		"/C/code/workreport/workreport/website/src",
-		"/C/code/workreport/workreport/website/src/img",
 		"/C/code/workreport/workreport/website/src/js"
 	],
 	"file_history":
 	[
+		"/C/code/workreport/workreport/website/src/index.html",
+		"/C/code/workreport/workreport/website/src/js/test.js",
+		"/C/code/workreport/workreport/website/gulpfile.js",
 		"/C/code/workreport/workreport/website/package.json",
+		"/C/code/workreport/workreport/website/bower.json",
 		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/gulpfile.js",
+		"/C/code/workreport/.gitignore",
 		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/package.json",
 		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/bower.json",
 		"/C/code/workreport/workreport/package.json",
@@ -721,12 +716,7 @@
 		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/left-rail/left-rail.js",
 		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/unittests/objectduplicatetest.js",
 		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/unittests/wiremovetooltest.js",
-		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/unittests/probePlaceTest.js",
-		"/c/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/multisim-dropdown/multisim-dropdown.html",
-		"/c/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/net-properties/net-properties.html",
-		"/C/Users/nlaw/Desktop/New folder/New folder/models/probeInstance.js",
-		"/C/Users/nlaw/Desktop/testttt",
-		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/models/templateObjects/templateWire.js"
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/unittests/probePlaceTest.js"
 	],
 	"find":
 	{
@@ -757,6 +747,18 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"snap.svg",
+			"gutil",
+			"jshint",
+			"fail",
+			"connect.reload",
+			"livereload",
+			"build",
+			"ipAddress",
+			"lookupIpAddress",
+			"connect",
+			"livereload",
+			"ms",
 			"rimraf",
 			"build",
 			"gulp.run",
@@ -872,19 +874,7 @@
 			"eventholder",
 			"click",
 			"axis.show",
-			"processOffset",
-			"setticks",
-			"setupgrid",
-			"processOptions",
-			"drawbackground",
-			"selectedAxis",
-			"draw(",
-			"draw",
-			"drawbackground",
-			"$",
-			"setsignals",
-			"selectedAxis",
-			"ensureVisibleLeftAxis"
+			"processOffset"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -903,93 +893,63 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "website/gulpfile.js",
+					"file": "website/src/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1621,
+						"buffer_size": 407,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								576,
-								576
+								290,
+								290
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 270.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/gulpfile.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 18379,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								16957,
-								16957
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 8025.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "website/src/js/test.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 10,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								10,
-								10
-							]
-						],
-						"settings":
-						{
-							"auto_name": "",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "website/src/js/test.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 485,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								435,
+								435
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -1076,7 +1036,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 185.0,
+	"side_bar_width": 223.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

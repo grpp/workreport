@@ -6,10 +6,25 @@
 	<script src="./thirdParty/fabric.js/dist/fabric.min.js"></script>
 	<script src="./thirdParty/jquery/dist/jquery.min.js"></script>
 	<script src="./thirdParty/Snap.svg/dist/snap.svg-min.js"></script>
+	<script src="./js/requestAnimationPolyfill.js"></script>
 
+	<script src="./js/model.js"></script>
+	<script src="./js/modelContainer.js"></script>
+	<script src="./js/animationController.js"></script>
 </head>
 <body>
-	<canvas id="c" style="position:absolute" width="1000" height="800"></canvas>
-	<script src="./js/test.js"></script>
+	<div id="canvasWrapper" style="height:824px; width:1024px">
+		<canvas id="c" style="position:absolute" width="1000" height="800"></canvas>
+	</div>
+	<div>
+		<div style="display:inline">
+			<button id="start">start</button>
+		</div>
+		<div style="display:inline">
+			<button id="stop">stop</button>
+		</div>
+	
+	</div>
+	<script src="./js/run.js"></script>
 </body>
 </html>

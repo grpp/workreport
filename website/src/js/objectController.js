@@ -18,7 +18,7 @@ window.svgVsCanvas.controllers = window.svgVsCanvas.controllers || {};
 	var listOfObjects = [];
 
 	function createAnimateObject(){
-		var animateObj = _this.animateObjects.create();
+		var animateObj = _this.model.animateObjects.create();
 
 		return animateObj;
 	}
@@ -105,17 +105,17 @@ window.svgVsCanvas.controllers = window.svgVsCanvas.controllers || {};
 	}
 
 	function create2DArray(rows, cols, canvas){
-		var arr = [];
+		listOfObjects = [];
 	    for(var i = 0; i < rows; i++) {
-	        arr[i] = [];
-	        arr[i].length = cols;
+	        listOfObjects[i] = [];
+	        listOfObjects[i].length = cols;
 	    }
 
 	    var size = calculateSize(rows, cols, canvas);
 
 		updateSize(size.height, size.width);
 
-	    return arr;
+	    return listOfObjects;
 	}
 
 	this.controllers.objectController = {

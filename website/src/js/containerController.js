@@ -9,8 +9,8 @@ window.svgVsCanvas.controllers = window.svgVsCanvas.controllers || {};
 */
 (function(){
 	'use strict';
-	var rowSize;
-	var colSize;
+	var rowSize = 0;
+	var colSize = 0;
 	var _this = this;
 
 	// is always just equal to rowSize or colSize minus 1
@@ -71,21 +71,21 @@ window.svgVsCanvas.controllers = window.svgVsCanvas.controllers || {};
 
 	// Private
 	function addColumns(numOfCols){
-		colSize = colSize + numOfCols;
-		colLength = numOfCols - 1;
+		colSize += numOfCols;
+		colLength = colSize - 1;
 	}
 
 	// Private
 	function addRows(numOfRows){
-		rowSize = rowSize + numOfRows;
-		rowLength = numOfRows - 1;
+		rowSize += numOfRows;
+		rowLength = rowSize - 1;
 	}
 
 	function addRowsAndColumns(numOfRows, numOfCols){
 		addColumns(numOfCols);
 		addRows(numOfRows);
 
-		objectController.create2DArray(numOfRows, numOfCols, canvas);
+		objectController.create2DArray(rowSize, colSize, canvas);
 	}
 
 	// You can specify specific dimension

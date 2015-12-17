@@ -45,6 +45,7 @@ window.svgVsCanvas.controllers = window.svgVsCanvas.controllers || {};
 		updateView: updateView,
 		buttonHandlers: buttonHandlers,
 		unbindHandlers: unbindHandlers,
+		renderType: renderType,
 	};
 
 }).apply(window.svgVsCanvas);

@@ -2,7 +2,7 @@
 window.svgVsCanvas = window.svgVsCanvas || {};
 
 (function() {
-	'use strict';
+	//'use strict';
 	var _this = this;
 	var canvas = new fabric.Canvas('c');
 
@@ -25,21 +25,21 @@ window.svgVsCanvas = window.svgVsCanvas || {};
 		var allObjects = objectController.getAllObjects();
 		allObjects.forEach(function(object){
 			object.updateView();
-			canvas.renderAll();
+			//canvas.renderAll();
 		});
-
-		_this.controllers.animationController.stopAnimation();
+		canvas.renderAll();
+		_this.controllers.animationController.animationEnd();
 	}
 
 	function updateView(){
 		var canvasPropertyObject = {
-			left: _this.left,
-			top: _this.top,
-			width: _this.width,
-			height: _this.height,
+			left: this.left,
+			top: this.top,
+			width: this.width,
+			height: this.height,
 		};
 
-		_this.canvasObj.set(canvasPropertyObject);
+		this.canvasObj.set(canvasPropertyObject);
 	}
 
 	function setupAnimationCallback(){

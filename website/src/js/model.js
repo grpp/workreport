@@ -7,15 +7,27 @@ window.svgVsCanvas.model = window.svgVsCanvas.model || {};
 	var AnimateObject = function(){
 		this.color = 'red';
 		this.orientation = null;
-		this.velocity = null;
+		this.velocity = 0;
 		this.direction = null; // Maybe direction doesn't even matter if we plan to have random motion
+		this.type = null;
+		this.height = 0;
+		this.width = 0;
+		this.left = 0;
+		this.top = 0;
 	};
 
 	AnimateObject.prototype.RandomizeColor = function(){
 		this.color = "#"+((1<<24)*Math.random()|0).toString(16);
 	};
 
+	AnimateObject.prototype.getType = function(){
+		return this.type;
+	};
 	
+	AnimateObject.prototype.setType = function(type){
+		this.type = type;
+	};
+
 	AnimateObject.prototype.getCanvasSize = function(){
 		if (this.canvasObject){
 			var height = this.canvasObject.get('height');
@@ -28,6 +40,16 @@ window.svgVsCanvas.model = window.svgVsCanvas.model || {};
 		}
 
 		return null;
+	};
+
+	AnimateObject.prototype.setSize = function(h, w){
+		this.height = h;
+		this.width = w;
+	};
+
+	AnimateObject.prototype.setPosition = function(x, y){
+		this.left = x;
+		this.top = y;
 	};
 
 	AnimateObject.prototype.getCanvasPosition = function(){

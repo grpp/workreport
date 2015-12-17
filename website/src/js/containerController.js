@@ -12,9 +12,6 @@ window.svgVsCanvas.controllers = window.svgVsCanvas.controllers || {};
 	var rowSize;
 	var colSize;
 	var _this = this;
-	var currentIndex = 0;
-	var currentRow = 0;
-	var currentCol = 0;
 
 	// is always just equal to rowSize or colSize minus 1
 	var rowLength;
@@ -23,17 +20,34 @@ window.svgVsCanvas.controllers = window.svgVsCanvas.controllers || {};
 	// Is the canvas fabrics wrapper of the canvas
 	var canvas; 
 
+	// Controllers
+	var objectController;
+
+	function getNextAvailablePosition(){
+		if (rowSize > 0 && colSize > 0){
+			for (var x = 0; x < rowSize; x++){
+				for(var y = 0; y < colSize; y++){
+					var object = objectController.getObject(x,y);
+					if (!object)
+						return {
+							row: x,
+							col: y
+						};
+				}
+			}
+		}
+		return null;
+	}
+
 	// current position doesnt make sense this is for initializing current position
 	// only for rendering test
-	function getInitialRenderPosition(){
-		var animateObject = _this.objectController.getObject(currentIndex);
-		var height = animateObject.getHeight();
-		var width = animateObject.getWidth();
-
+	function getInitialRenderPosition(row, col){
 		// We can either use the canvas size and calculate the height and width
 		// or we can use the currentRow and current Height to determine the size
-		var top = currentRow * height;
-		var left = currentCol * width;
+		var width = objectController.getWidth();
+		var height = objectController.getHeight();
+		var top = row * height;
+		var left = col * width;
 
 		return {
 			top: top,
@@ -43,7 +57,7 @@ window.svgVsCanvas.controllers = window.svgVsCanvas.controllers || {};
 		};
 	}
 
-	function getNumberOfObjects(){
+	function getMaxNumberOfObjects(){
 		return rowSize * colSize;
 	}
 
@@ -55,40 +69,23 @@ window.svgVsCanvas.controllers = window.svgVsCanvas.controllers || {};
 		return colSize;
 	}
 
+	// Private
 	function addColumns(numOfCols){
-		var newListSize;
-		var numOfObjectsToAdd;
-
-		colSize += numOfCols;
+		colSize = colSize + numOfCols;
 		colLength = numOfCols - 1;
-
-		newListSize = colSize * rowSize;
-		numOfObjectsToAdd = newListSize - getNumberOfObjects();
-
-
-		for(var i = 0; i < numOfObjectsToAdd; i++){
-			createObject();
-		}
 	}
 
+	// Private
 	function addRows(numOfRows){
-		var newListSize;
-		var numOfObjectsToAdd;
-
-		rowSize += numOfRows;
+		rowSize = rowSize + numOfRows;
 		rowLength = numOfRows - 1;
-
-		newListSize = colSize * rowSize;
-		numOfObjectsToAdd = newListSize - getNumberOfObjects();
-
-		for(var i = 0; i < numOfObjectsToAdd; i++){
-			createObject();
-		}
 	}
 
 	function addRowsAndColumns(numOfRows, numOfCols){
 		addColumns(numOfCols);
 		addRows(numOfRows);
+
+		objectController.create2DArray(numOfRows, numOfCols, canvas);
 	}
 
 	// You can specify specific dimension
@@ -104,14 +101,20 @@ window.svgVsCanvas.controllers = window.svgVsCanvas.controllers || {};
 		return rect;
 	}
 
-	function createObject(){
-		var object = _this.controllers.objectController.createObject();
+	function createCanvasObject(row, col){
+		var object = _this.controllers.objectController.createObject(row, col);
 		initializeRectObject(object);
+		object.type = _this.controllers.viewController.renderType.CANVAS;
+		var position = getInitialRenderPosition(row, col);
+		object.setSize(position.height, position.width);
+		object.setPosition(position.left, position.top);
+
+		return object;
 	}
 
 	function deleteAllObjects(){
 		// remove from canvas
-		var listOfObjects = _this.controllers.objectController.getObjects();
+		var listOfObjects = _this.controllers.objectController.getAllObjects();
 		listOfObjects.forEach(function deleteModelObject(object){
 			var canvasObject = object.canvasObject;
 			if (canvasObject){
@@ -119,6 +122,7 @@ window.svgVsCanvas.controllers = window.svgVsCanvas.controllers || {};
 			}
 		});
 
+		// Clear all objects within array
 		_this.controllers.objectController.deleteAllObjects();
 	}
 
@@ -134,17 +138,28 @@ window.svgVsCanvas.controllers = window.svgVsCanvas.controllers || {};
 				canvasObject.set(propertyObj);
 			} else {
 				// how did this happen it should fail
-				console.log('Error updating canvasObject');
+				throw 'Error updating canvasObject';
 			}
 		}
 	}
 
-	function initialize(fabricCanvas){
-		canvas = fabricCanvas;
+	function createAllCanvasObjects(){
+		if (rowSize > 0 && colSize > 0){
+			for (var x = 0; x < rowSize; x++){
+				for(var y = 0; y < colSize; y++){
+					createCanvasObject(x,y);
+				}
+			}
+		}
 	}
 
-	this.controllers.modelContainer = {
-		getNumberOfObjects: getNumberOfObjects,
+	function initialize(fabricCanvas, p_objectController){
+		canvas = fabricCanvas;
+		objectController = p_objectController;
+	}
+
+	this.controllers.containerController = {
+		getMaxNumberOfObjects: getMaxNumberOfObjects,
 		getRowSize: getRowSize,
 		getInitialRenderPosition: getInitialRenderPosition,
 		getColumnSize: getColumnSize,
@@ -153,8 +168,10 @@ window.svgVsCanvas.controllers = window.svgVsCanvas.controllers || {};
 		addRowsAndColumns: addRowsAndColumns,
 		deleteAllObjects: deleteAllObjects,
 		updateCanvasObject: updateCanvasObject,
-
-		initialize: initialize,	
+		createAllCanvasObjects: createAllCanvasObjects,
+		createCanvasObject: createCanvasObject,
+		initialize: initialize,
+		getNextAvailablePosition: getNextAvailablePosition,
 	};
 
 }).apply(window.svgVsCanvas);

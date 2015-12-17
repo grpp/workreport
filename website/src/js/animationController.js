@@ -8,22 +8,52 @@ window.svgVsCanvas.controllers = window.svgVsCanvas.controllers || {};
 	// callback
 	var animationId;
 
-	function animationStart(callback){
-		animationId = requestAnimationFrame(callback);
+	var setupAnimationCallback;
+	var endAnimationCallback;
+	var beforeUpdateAnimationCallback;
+	var afterUpdateAnimationCallback;
+	var updateAnimationCallback;
+
+	// Before animation starts
+	function animationStart(){
+		if(setupAnimationCallback)
+			setupAnimationCallback();
+
+		animationId = requestAnimationFrame(updateAnimationCallback);
 	}
 
-	function animationEnd(){
+	function animationEnd(endCallback){
 		cancelAnimationFrame(animationId);
+
+		if(endAnimationCallback)
+			endAnimationCallback();
 	}
 
-	function animationFrameUpdate(callback){
+	function animationFrameUpdate(animationCallback, beforeCallback, afterCallback){
+		if (beforeUpdateAnimationCallback)
+			beforeUpdateAnimationCallback();
 
+		animationId = requestAnimationFrame(updateAnimationCallback);
+
+		if (afterUpdateAnimationCallback)
+			afterUpdateAnimationCallback();
+	}	
+
+	// Maybe to use for dependency injection
+	function initialize(animationCallbacksObj){
+		setupAnimationCallback = animationCallbacksObj.setupAnimationCallback;
+		endAnimationCallback = animationCallbacksObj.endAnimationCallback;
+		beforeUpdateAnimationCallback = animationCallbacksObj.beforeUpdateAnimationCallback;
+		afterUpdateAnimationCallback = animationCallbacksObj.afterUpdateAnimationCallback;
+		updateAnimationCallback = animationCallbacksObj.updateAnimationCallback;
 	}
 
 	this.animationController = {
 		animationStart: animationStart,
 		animationEnd: animationEnd,
-		animationFrameUpdate: animationFrameUpdate
+		animationFrameUpdate: animationFrameUpdate,
+
+		initialize: initialize,
 	};
 
 }).apply(window.svgVsCanvas.controllers);

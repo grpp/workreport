@@ -1,0 +1,1232 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"canva",
+				"canvasPropertyObject"
+			],
+			[
+				"cal",
+				"calculateSize"
+			],
+			[
+				"update",
+				"updateSize"
+			],
+			[
+				"con",
+				"containerController"
+			],
+			[
+				"c",
+				"containerController"
+			],
+			[
+				"current",
+				"currentRow"
+			],
+			[
+				"start",
+				"startHandler"
+			],
+			[
+				"setup",
+				"setupAnimation"
+			],
+			[
+				"anim",
+				"animationCallbacks"
+			],
+			[
+				"curren",
+				"currentCol"
+			],
+			[
+				"curre",
+				"currentRow"
+			],
+			[
+				"get",
+				"getHeight"
+			],
+			[
+				"numO",
+				"numOfRows"
+			],
+			[
+				"create",
+				"createAnimateObject"
+			],
+			[
+				"list",
+				"listOfObjects"
+			],
+			[
+				"p_",
+				"p_Width"
+			],
+			[
+				"object",
+				"objectControl"
+			],
+			[
+				"objectC",
+				"objectController"
+			],
+			[
+				"after",
+				"afterUpdateAnimationCallback"
+			],
+			[
+				"before",
+				"beforeUpdateAnimationCallback"
+			],
+			[
+				"animationCallback",
+				"animationCallbacksObj"
+			],
+			[
+				"end",
+				"endAnimationCallback"
+			],
+			[
+				"obje",
+				"objectController"
+			],
+			[
+				"remove",
+				"removeUpdateHandler"
+			],
+			[
+				"canvasObj",
+				"canvasObject"
+			],
+			[
+				"canvas",
+				"canvasContext"
+			],
+			[
+				"getC",
+				"getCurrentPosition"
+			],
+			[
+				"forEa",
+				"forEachObject"
+			],
+			[
+				"numOf",
+				"numOfRows"
+			],
+			[
+				"crea",
+				"createAnimateObject"
+			],
+			[
+				"addRows",
+				"addRowsAndColumns"
+			],
+			[
+				"circ",
+				"circle3"
+			],
+			[
+				"circle",
+				"circle"
+			],
+			[
+				"third",
+				"thirdParty"
+			],
+			[
+				"findInst",
+				"findInstancesOfTemplate"
+			],
+			[
+				"find",
+				"findInstancesOfTemplate"
+			],
+			[
+				"for",
+				"forAllWires"
+			],
+			[
+				"getW",
+				"getWireTerminals"
+			],
+			[
+				"netlist",
+				"netlistController"
+			],
+			[
+				"wireIn",
+				"wireInstances"
+			],
+			[
+				"testW",
+				"testWireInstance2"
+			],
+			[
+				"wrapper",
+				"wrapperObject"
+			],
+			[
+				"ensure",
+				"ensureWireLabelVisibility"
+			],
+			[
+				"p_Gr",
+				"p_GraphContainer"
+			],
+			[
+				"p_G",
+				"p_GraphContainer"
+			],
+			[
+				"bind",
+				"bindEvents"
+			],
+			[
+				"process",
+				"processOffset"
+			],
+			[
+				"proc",
+				"processOffset"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"trans",
+				"translate3d"
+			],
+			[
+				"webkit",
+				"webkit-transform"
+			],
+			[
+				"selec",
+				"selectedAxis"
+			],
+			[
+				"event",
+				"eventHolder"
+			],
+			[
+				"forEach",
+				"forEachVisibleAxis"
+			],
+			[
+				"paddin",
+				"padding-right"
+			],
+			[
+				"removeP",
+				"removeProbeFromVar"
+			],
+			[
+				"probesTo",
+				"probesToUpdate"
+			],
+			[
+				"listOf",
+				"listOfRemovedProbes"
+			],
+			[
+				"addProbe",
+				"addProbeToVar"
+			],
+			[
+				"probeTo",
+				"probesToUpdateVar"
+			],
+			[
+				"forE",
+				"forEachPointOnSegment"
+			],
+			[
+				"rerou",
+				"reroutedWireGridPath"
+			],
+			[
+				"shee",
+				"sheetTemplateController"
+			],
+			[
+				"diagon",
+				"diagonalCornerOverlap"
+			],
+			[
+				"traver",
+				"traversedSegment"
+			],
+			[
+				"sheet",
+				"sheetTemplate"
+			],
+			[
+				"ob",
+				"objectLookup"
+			],
+			[
+				"getOb",
+				"getObjectsAtPoint"
+			],
+			[
+				"R",
+				"PROBE_REFERENCE"
+			],
+			[
+				"acti",
+				"activeViewGetter"
+			],
+			[
+				"draw",
+				"drawerOpenedHandler"
+			],
+			[
+				"probeIdTem",
+				"probeIDTemplateObject"
+			],
+			[
+				"pro",
+				"probeRefs"
+			],
+			[
+				"listOfPro",
+				"listOfProbesChanged"
+			],
+			[
+				"listO",
+				"listOfProbesChanged"
+			],
+			[
+				"changeW",
+				"changeWireLabelVisibility"
+			],
+			[
+				"isPoint",
+				"isPointStart"
+			],
+			[
+				"endP",
+				"endPointTraversed"
+			],
+			[
+				"startPoint",
+				"startPointTraversed"
+			],
+			[
+				"startPoin",
+				"startPointTraversed"
+			],
+			[
+				"isD",
+				"isDirectionVertical"
+			],
+			[
+				"isS",
+				"isSegmentHorizontal"
+			],
+			[
+				"items",
+				"itemsToProcessForLabelVisibility"
+			],
+			[
+				"check",
+				"checkWireExistOnTerminals"
+			],
+			[
+				"templateProbe",
+				"templateProbeRef"
+			],
+			[
+				"probe",
+				"probeRefs"
+			],
+			[
+				"newT",
+				"newTemplateProbe"
+			],
+			[
+				"probeS",
+				"probeStateFromRef"
+			],
+			[
+				"sheetT",
+				"sheetTemplate"
+			],
+			[
+				"getState",
+				"getProbeStateBasedOnReference"
+			],
+			[
+				"getProbe",
+				"getProbeStateBasedOnReference"
+			],
+			[
+				"context",
+				"contextGUID"
+			],
+			[
+				"P",
+				"PROBE_VOLTAGE"
+			],
+			[
+				"refere",
+				"referenceProbe"
+			],
+			[
+				"active",
+				"activeView"
+			],
+			[
+				"Vol",
+				"PROBE_VOLTAGE"
+			],
+			[
+				"reference",
+				"PROBE_REFERENCE"
+			],
+			[
+				"p_N",
+				"p_NewProbeType"
+			],
+			[
+				"probeRef",
+				"probeReferenceOptions"
+			],
+			[
+				"ref",
+				"referenceProbe"
+			],
+			[
+				"ty",
+				"probeType"
+			],
+			[
+				"forEachW",
+				"forEachWireCallback"
+			],
+			[
+				"newList",
+				"newListLength"
+			],
+			[
+				"prevL",
+				"prevListOfObjects"
+			],
+			[
+				"sheetTempl",
+				"sheetTemplateController"
+			],
+			[
+				"isTempl",
+				"isTemplateWire"
+			],
+			[
+				"restri",
+				"restrictedPoint"
+			],
+			[
+				"delta",
+				"deltaDistance"
+			],
+			[
+				"graph",
+				"graphmagnitude"
+			],
+			[
+				"sw",
+				"sweepTypeEnum"
+			],
+			[
+				"swe",
+				"sweepType"
+			],
+			[
+				"simul",
+				"simulationController"
+			],
+			[
+				"getA",
+				"getActiveAnalysis"
+			],
+			[
+				"E",
+				"EAnalysisTypes"
+			],
+			[
+				"design",
+				"designController"
+			],
+			[
+				"p_Pr",
+				"p_ProbeController"
+			],
+			[
+				"globalPro",
+				"globalProbeSetting"
+			],
+			[
+				"global",
+				"globalProbeFlag"
+			],
+			[
+				"orign",
+				"originalPoint"
+			],
+			[
+				"segment",
+				"segmentToAdd"
+			],
+			[
+				"extend",
+				"extendDirection"
+			],
+			[
+				"moving",
+				"movingSegment"
+			],
+			[
+				"isPoin",
+				"isPointSameAsEnd"
+			],
+			[
+				"isPointSameA",
+				"isPointSameAsStart"
+			],
+			[
+				"direct",
+				"directionToExtend"
+			],
+			[
+				"direc",
+				"directionToExtend"
+			],
+			[
+				"exte",
+				"extendDirection"
+			],
+			[
+				"wireTm",
+				"wireTemplateGUID"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "website/src/index.html",
+			"settings":
+			{
+				"buffer_size": 909,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "website/src/js/run.js",
+			"settings":
+			{
+				"buffer_size": 128,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "website/src/js/renderTestCanvas.js",
+			"settings":
+			{
+				"buffer_size": 1578,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "website/src/js/animationController.js",
+			"settings":
+			{
+				"buffer_size": 1654,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "website/src/js/viewController.js",
+			"settings":
+			{
+				"buffer_size": 1145,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "website/src/js/containerController.js",
+			"settings":
+			{
+				"buffer_size": 4181,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "website/src/js/objectController.js",
+			"settings":
+			{
+				"buffer_size": 2570,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/User/Javascript.sublime-build",
+					""
+				],
+				[
+					"Packages/User/Node.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/User/Node.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 120.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/code/workreport/workreport/website",
+		"/C/code/workreport/workreport/website/build/js",
+		"/C/code/workreport/workreport/website/src",
+		"/C/code/workreport/workreport/website/src/img",
+		"/C/code/workreport/workreport/website/src/js"
+	],
+	"file_history":
+	[
+		"/C/code/workreport/workreport/website/src/js/model.js",
+		"/C/code/workreport/workreport/website/src/js/containerController.js",
+		"/C/code/workreport/workreport/website/src/js/viewController.js",
+		"/C/code/workreport/workreport/website/src/js/animationController.js",
+		"/C/code/workreport/workreport/website/src/js/objectController.js",
+		"/C/code/workreport/workreport/website/src/js/requestAnimationPolyfill.js",
+		"/C/code/workreport/workreport/website/src/js/test.js",
+		"/C/Users/nlaw/AppData/Local/Temp/p4v/NLAWOPT990_p4ewb.amer.corp.natinst.com_1666/tasks/DE6810_No_label_shown_on_undo_placement_of_wire/multisim/src/controllers/sheetTemplateSubControllers/sheetTemplateWiringController@=89024.js",
+		"/C/code/workreport/workreport/website/gulpfile.js",
+		"/C/code/workreport/workreport/website/build/js/model.js",
+		"/C/code/workreport/workreport/website/build/js/animationController.js",
+		"/C/code/workreport/workreport/website/src/index.html",
+		"/C/code/workreport/workreport/website/package.json",
+		"/C/code/workreport/workreport/website/bower.json",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/gulpfile.js",
+		"/C/code/workreport/.gitignore",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/package.json",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/bower.json",
+		"/C/code/workreport/workreport/package.json",
+		"/C/code/workreport/workreport/workreport.sublime-project",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/controllers/sheetTemplateSubControllers/sheetTemplateWiringController.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/controllers/netlistcontroller.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/models/sheettemplatefactory.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/controllers/animationcontroller.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/controllers/undoredo.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/controllers/animatedpartscontroller.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/grapher-object/grapher-object.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/models/sheettemplatelookupfactory.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/controllers/graphControllerFactoryFlot.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/third_party/flot/jquery.flot.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/third_party/flot/jquery.flot.selection.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/control-colorbutton/control-colorbutton.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/grapher-object/grapher-object.html",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/simulation-output/simulation-output.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/simulation-output/simulation-output.html",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/third_party/flot/jquery.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/views/inputeventsinterfacefactory.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/sheet-settings/sheet-settings.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/third_party/flot-axislabels/jquery.flot.axislabels.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/connector-properties/connector-properties.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/views/adorners.js",
+		"/C/Users/nlaw/AppData/Local/Temp/p4v/NLAWOPT990_p4ewb.amer.corp.natinst.com_1666/tasks/US90651_Active_plot_selection_on_graph/multisim/src/components/grapher-object/grapher-object#2.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/unittests/graphControllerFactoryFlotTest.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/third_party/flot/jquery.flot.navigate.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/third_party/flot/jquery.flot.crosshair.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/third_party/flot/excanvas.min.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/third_party/flot/examples/tracking/index.html",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/third_party/flot/API.md",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/third_party/flot/jquery.flot.pie.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/object-palette/object-palette.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/controllers/sheetTemplateSubControllers/sheetTemplateProbeController.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/models/designfactory.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/controllers/probecontrollerfactory.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/controllers/designcontrollerfactory.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/third_party/flot/examples/interacting/index.html",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/analysis-settings/analysis-settings.html",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/i18n/bla.json",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/i18n/en.json",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/analysis-settings/analysis-settings.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/document-properties-panel/document-properties-panel.html",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/analysisSettingsPanels/interactive/interactive-settings.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/analysisSettingsPanels/interactive/interactive-settings.html",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/analysisSettingsPanels/dc-op/dc-op-settings.html",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/analysisSettingsPanels/dc-op/dc-op-settings.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/analysisSettingsPanels/ac-sweep/ac-sweep-settings.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/analysisSettingsPanels/ac-sweep/ac-sweep-settings.html",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/analysisSettingsPanels/transient/transient-settings.html",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/analysisSettingsPanels/transient/transient-settings.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/multisim-button/multisim-button.html",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/third_party/paper-ripple/demo/index.html",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/global-simulation-settings/global-simulation-settings.html",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/third_party/iron-icons/av-icons.html",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/analysisSettingsPanels/interactive/interactive-settings (2).js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/tools/defaulttool.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/interactive/interactive-settings.js",
+		"/C/Users/nlaw/Desktop/New folder/transient/transient-settings.js",
+		"/C/Users/nlaw/Desktop/New folder/interactive/interactive-settings.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/analysisSettingsPanels/transient/transient-settings (2).js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/controllers/sheettemplatecontrollerfactory.js",
+		"/C/Users/nlaw/AppData/Local/Temp/p4v/NLAWOPT990_p4ewb.amer.corp.natinst.com_1666/streamsrc/webmultisim/multisim/src/controllers/sheettemplatecontrollerfactory#131.js",
+		"/C/Users/nlaw/AppData/Local/Temp/p4v/NLAWOPT990_p4ewb.amer.corp.natinst.com_1666/streamsrc/webmultisim/multisim/src/controllers/sheetTemplateSubControllers/sheetTemplateProbeController#1.js",
+		"/C/Users/nlaw/AppData/Local/Temp/p4v/NLAWOPT990_p4ewb.amer.corp.natinst.com_1666/streamsrc/webmultisim/multisim/src/controllers/sheetTemplateSubControllers/sheetTemplateControllerBase#1.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/probe-properties/probe-properties.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/multisim-button/multisim-button.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/utilities/toolbarcommandinterface.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/views/manipulator.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/toolbar/dynamic-toolbar.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/global-simulation-settings/global-simulation-settings.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/toolbar/dynamic-toolbar.html",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/dialog-confirmation/dialog-confirmation.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/toolbar/toolbar.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/toolbar/toolbar.html",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/controllers/railcontrollerfactory.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/controllers/simulationControllerFactory.js",
+		"/C/Users/nlaw/AppData/Local/Temp/p4v/NLAWOPT990_p4ewb.amer.corp.natinst.com_1666/tasks/US58767-Multi_axis_graphs/multisim/src/components/grapher-object/grapher-object#3.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/controllers/viewcontrollerfactory.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/probe-reference-list/probe-reference-list.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/multisim-dropdown/multisim-dropdown.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/object-properties/object-properties.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/web-multisim/web-multisim.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/left-rail/left-rail.html",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/controllers/resourcecontroller.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/web-multisim/web-multisim.html",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/multisim-dropdown/multisim-dropdown.html",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/web-multisim-styles/web-multisim-styles.html",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/probe-reference-list/probe-reference-list.html",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/importers/webmultisimdesignimport.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/componentAPI.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/exporters/webmultisimdesignexport.js",
+		"/C/Users/nlaw/AppData/Local/Temp/p4v/NLAWOPT990_p4ewb.amer.corp.natinst.com_1666/streamsrc/webmultisim/multisim/src/exporters/webmultisimdesignexport#43.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/active-analysis-selector/active-analysis-selector.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/probe-display/probe-display.html",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/probe-display/probe-display.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/models/instanceObjects/probeInstance.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/models/templateObjects/templateProbe.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/probe-properties/probe-properties.html",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/tools/objectmove.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/tools/probeplace.js",
+		"/C/Users/nlaw/AppData/Local/Temp/p4v/NLAWOPT990_p4ewb.amer.corp.natinst.com_1666/streamsrc/webmultisim/multisim/src/controllers/viewcontrollerfactory#59.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/utilities/numberformater.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/tools/wiremove.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/models/routermap.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/right-rail/right-rail.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/utilities/translate.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/resources/palette.json",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/multisim-input/multisim-input.html",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/multisim-input/multisim-input.js",
+		"/C/code/test/nlaw_NLAWOPT990_webmultisim_8090/multisim/src/components/object-properties/object-properties.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"C:\\code\\workreport\\workreport\\website\\src",
+			"C:\\code\\test\\nlaw_NLAWOPT990_webmultisim_8090\\multisim\\src\\",
+			"C:\\code\\test\\nlaw_NLAWOPT990_webmultisim_8090\\multisim\\src\\third_party\\flot",
+			"C:\\code\\test\\nlaw_NLAWOPT990_webmultisim_8090\\multisim\\src\\third_party\\",
+			"C:\\code\\test\\nlaw_NLAWOPT990_webmultisim_8090\\multisim\\src\\third_party\\flot",
+			"C:\\code\\test\\nlaw_NLAWOPT990_webmultisim_8090\\multisim\\src\\third_party\\floti",
+			"C:\\code\\test\\nlaw_NLAWOPT990_webmultisim_8090\\multisim\\src",
+			"C:\\code\\test\\nlaw_NLAWOPT990_webmultisim_7391\\multisim\\src",
+			"C:\\code\\test\\nlaw_NLAWOPT990_webmultisim_7391\\multisim",
+			"C:\\code\\test\\nlaw_NLAWOPT990_webmultisim_7391\\multisim\\",
+			"C:\\code\\test\\nlaw_NLAWOPT990_webmultisim_7391\\multisim\\src",
+			"C:\\code\\test\\nlaw_NLAWOPT990_test_4423\\multisim\\src",
+			"C:\\code\\test\\nlaw_NLAWOPT990_test_4423\\multisim\\src,C:\\code\\test\\nlaw_NLAWOPT990_test_4423\\multisim\\src",
+			"C:\\code\\test\\nlaw_NLAWOPT990_test_4423\\multisim\\src"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"this",
+			"updatesize",
+			"updateSize",
+			"freeze",
+			"create2DArray",
+			"forallobjects",
+			"foreachobject",
+			"p_Height",
+			"updateCanvasObject",
+			"create",
+			"snap.svg",
+			"gutil",
+			"jshint",
+			"fail",
+			"connect.reload",
+			"livereload",
+			"build",
+			"ipAddress",
+			"lookupIpAddress",
+			"connect",
+			"livereload",
+			"ms",
+			"rimraf",
+			"build",
+			"gulp.run",
+			".run",
+			"livereload",
+			"jshint",
+			"getwiring",
+			"getwire",
+			"forallwires",
+			"addwire",
+			"ensurewirelabelvisibility",
+			"ensurewirelabel",
+			"undo: function()",
+			"finalizers",
+			"finalize",
+			"redo: function(){}",
+			"schematicObjects",
+			"getobject",
+			"getObject",
+			"animatefunction",
+			"animatefunciton",
+			"animatefunction(",
+			".animate",
+			"animate",
+			"forallwires",
+			"ensurewirelabelvisibility",
+			"addWire",
+			"getwireterminal",
+			"getter",
+			"ensurewirelabelvisibility",
+			"onTouchStart",
+			"unbind",
+			"ontouchstart",
+			"touchstart",
+			"ipad",
+			"onClick",
+			"getselection",
+			"getSelection",
+			"plotselected",
+			"click",
+			"start",
+			"touchstart",
+			"click",
+			"nims_simoutputcontainer",
+			"onClick",
+			"series = [",
+			"offset",
+			"findnear",
+			"plotclick",
+			"hidden",
+			"grapherContainer",
+			"grapher-object",
+			"pointer-events",
+			"pointer",
+			"pointer-events",
+			"cursor",
+			"hammer.tap",
+			"bindflotgraph",
+			"bindFlotGraph",
+			"addstep",
+			"disconnect",
+			"doDisconnect",
+			"addstep",
+			"startaction",
+			"findnearbyitem",
+			"canvas",
+			".show",
+			"bind",
+			"bindAxisSelectionToGraph",
+			"resize",
+			"bindAxisSelectionToGraph",
+			"bindflot",
+			"subgraphs",
+			"subGraphs",
+			"bindFlotGraph",
+			"initializegraph",
+			"resize",
+			"canvas",
+			"createFlotGraph",
+			"adorner.create",
+			"full",
+			"alignTicksWithAxis",
+			"updateacgra",
+			"alignTicksWithAxis",
+			"yaxis:",
+			"yaxis =",
+			"generateacgraph",
+			"updateacgraph",
+			"clicka",
+			"axes",
+			"setsignals",
+			"expandaxis",
+			"forEachvi",
+			"yaxis",
+			"bindtracehand",
+			"this",
+			"thos",
+			"forEachVisibleYAxis",
+			"selectedaxis",
+			"generateacgraph",
+			"generateacgraphconfig",
+			"draw()",
+			"ensureVisibleLeftAxis",
+			"canvas",
+			"translate",
+			"selectedAxis"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"duplicateobject"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "website/src/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 909,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								909,
+								909
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "website/src/js/run.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 128,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								97,
+								97
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "website/src/js/renderTestCanvas.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1578,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1371,
+								1371
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 90.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "website/src/js/animationController.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1654,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1489,
+								1503
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 45.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "website/src/js/viewController.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1145,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1145,
+								1145
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "website/src/js/containerController.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4181,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3624,
+								3643
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2131.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "website/src/js/objectController.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2570,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1609,
+								1612
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1125.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 245.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/Javascript.sublime-build",
+	"project": "workreport.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 223.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

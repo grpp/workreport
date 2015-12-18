@@ -46,13 +46,21 @@ window.svgVsCanvas = window.svgVsCanvas || {};
 		}
 	}
 
-	function updateView(){
+	function updateView(color){
 		var canvasPropertyObject = {
 			left: this.left,
 			top: this.top,
 			width: this.width,
 			height: this.height,
 		};
+
+		if (color){
+			this.color = color;
+		} else {
+			this.randomizeColor();
+		}
+
+		canvasPropertyObject.fill = this.color;
 
 		this.canvasObj.set(canvasPropertyObject);
 	}
@@ -71,8 +79,9 @@ window.svgVsCanvas = window.svgVsCanvas || {};
 		var allObjects = objectController.getAllObjects();
 		allObjects.forEach(function(object){
 			object.updateView = updateView; 
+			object.updateView('black');
 		});
-
+		canvas.renderAll();
 		maxX = containerController.getRowSize() - 1;
 		maxY = containerController.getColumnSize() - 1;
 	}

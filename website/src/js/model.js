@@ -16,7 +16,7 @@ window.svgVsCanvas.model = window.svgVsCanvas.model || {};
 		this.top = 0;
 	};
 
-	AnimateObject.prototype.RandomizeColor = function(){
+	AnimateObject.prototype.randomizeColor = function(){
 		this.color = "#"+((1<<24)*Math.random()|0).toString(16);
 	};
 

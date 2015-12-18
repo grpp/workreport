@@ -88,6 +88,11 @@ window.svgVsCanvas.controllers = window.svgVsCanvas.controllers || {};
 		objectController.create2DArray(rowSize, colSize, canvas);
 	}
 
+	function resetSize(){
+		colSize = 0;
+		rowSize = 0;
+	}
+
 	// You can specify specific dimension
 	function createCanvasRect(propertyObj){
 		var rect = new fabric.Rect();
@@ -116,10 +121,10 @@ window.svgVsCanvas.controllers = window.svgVsCanvas.controllers || {};
 		// remove from canvas
 		var listOfObjects = _this.controllers.objectController.getAllObjects();
 		listOfObjects.forEach(function deleteModelObject(object){
-			var canvasObject = object.canvasObject;
-			if (canvasObject){
-				canvas.remove(canvasObject);
+			if (object.canvasObj){
+				canvas.remove(object.canvasObj);
 			}
+			delete object.canvasObj;
 		});
 
 		// Clear all objects within array
@@ -172,6 +177,7 @@ window.svgVsCanvas.controllers = window.svgVsCanvas.controllers || {};
 		createCanvasObject: createCanvasObject,
 		initialize: initialize,
 		getNextAvailablePosition: getNextAvailablePosition,
+		resetSize: resetSize,
 	};
 
 }).apply(window.svgVsCanvas);

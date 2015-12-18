@@ -66,11 +66,11 @@ window.svgVsCanvas = window.svgVsCanvas || {};
 	}
 
 	function setupAnimationCallback(){
-		containerController.addRowsAndColumns(25,25);
+		containerController.addRowsAndColumns(20,20);
 		containerController.createAllCanvasObjects();
 		var allObjects = objectController.getAllObjects();
 		allObjects.forEach(function(object){
-			object.updateView = updateView; 
+			object.updateView = updateView;
 		});
 
 		maxX = containerController.getRowSize() - 1;

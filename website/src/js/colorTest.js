@@ -74,7 +74,7 @@ window.svgVsCanvas = window.svgVsCanvas || {};
 	}
 
 	function setupAnimationCallback(){
-		containerController.addRowsAndColumns(25,25);
+		containerController.addRowsAndColumns(30,30);
 		containerController.createAllCanvasObjects();
 		var allObjects = objectController.getAllObjects();
 		allObjects.forEach(function(object){

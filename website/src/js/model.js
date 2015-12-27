@@ -65,6 +65,10 @@ window.svgVsCanvas.model = window.svgVsCanvas.model || {};
 		return null;
 	};
 
+	AnimateObject.prototype.addSVGGUID = function (guid){
+		this.guid = guid;
+	};
+
 	AnimateObject.prototype.addCanvasObject = function(canvasObject){
 		this.canvasObj = canvasObject;
 	};

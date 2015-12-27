@@ -8,16 +8,17 @@
 	<script src="./thirdParty/Snap.svg/dist/snap.svg-min.js"></script>
 	<script src="./js/requestAnimationPolyfill.js"></script>
 
+	<script src="./js/guidFactory.js"></script>
 	<script src="./js/model.js"></script>
 	<script src="./js/objectController.js"></script>
 	<script src="./js/containerController.js"></script>
 	<script src="./js/animationController.js"></script>
 	<script src="./js/viewController.js"></script>
+
 </head>
 <body>
-	<div id="canvasWrapper" style="height:800px; width:800px">
-		<canvas id="c" style="position:absolute" width="800" height="800"></canvas>
-	</div>
+	<svg id="svgWrapper" width="800" height="800">
+	</svg>
 	<div>
 		<div style="display:inline">
 			<button id="start">start</button>
@@ -30,6 +31,6 @@
 			FPS: <span id="fps"></span>
 		</div>
 	</div>
-	<script src="./js/canvasTest/colorTest.js"></script>
+	<script src="./js/svgTest/colorTest.js"></script>
 </body>
 </html>

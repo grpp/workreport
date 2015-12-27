@@ -20,6 +20,7 @@ window.svgVsCanvas.controllers = window.svgVsCanvas.controllers || {};
 	// Is the canvas fabrics wrapper of the canvas
 	var canvas; 
 
+	var svg;
 	// Controllers
 	var objectController;
 
@@ -85,7 +86,7 @@ window.svgVsCanvas.controllers = window.svgVsCanvas.controllers || {};
 		addColumns(numOfCols);
 		addRows(numOfRows);
 
-		objectController.create2DArray(rowSize, colSize, canvas);
+		objectController.create2DArray(rowSize, colSize, canvas, svg);
 	}
 
 	function resetSize(){
@@ -123,8 +124,13 @@ window.svgVsCanvas.controllers = window.svgVsCanvas.controllers || {};
 		listOfObjects.forEach(function deleteModelObject(object){
 			if (object.canvasObj){
 				canvas.remove(object.canvasObj);
+				delete object.canvasObj;
+			} else if(object.guid){
+				var obj = svg.select('#' + object.guid);
+				obj.remove();
+	
+				object.guid = null;
 			}
-			delete object.canvasObj;
 		});
 
 		// Clear all objects within array
@@ -158,9 +164,44 @@ window.svgVsCanvas.controllers = window.svgVsCanvas.controllers || {};
 		}
 	}
 
-	function initialize(fabricCanvas, p_objectController){
+	function createSVGRect(guid){
+		var rect = svg.rect(0,0,0,0);
+		rect.attr({
+			id: guid
+		});
+	}
+
+	function createSVGObject(row,col){
+		var object = _this.controllers.objectController.createObject(row, col);
+		initializeSVGObject(object);
+		object.type = _this.controllers.viewController.renderType.SVG;
+		var position = getInitialRenderPosition(row, col);
+		object.setSize(position.height, position.width);
+		object.setPosition(position.left, position.top);
+
+		return object;
+	}
+
+	function initializeSVGObject(obj){
+		var id = _this.guidFactory.getID();
+		obj.addSVGGUID(id);
+		createSVGRect(id);
+	}
+
+	function createAllSVGObjects(){
+		if (rowSize > 0 && colSize > 0){
+			for (var x = 0; x < rowSize; x++){
+				for(var y = 0; y < colSize; y++){
+					createSVGObject(x,y);
+				}
+			}
+		}
+	}
+
+	function initialize(fabricCanvas, p_SVG, p_objectController){
 		canvas = fabricCanvas;
 		objectController = p_objectController;
+		svg = p_SVG;
 	}
 
 	this.controllers.containerController = {
@@ -178,6 +219,7 @@ window.svgVsCanvas.controllers = window.svgVsCanvas.controllers || {};
 		initialize: initialize,
 		getNextAvailablePosition: getNextAvailablePosition,
 		resetSize: resetSize,
+		createAllSVGObjects:createAllSVGObjects,
 	};
 
 }).apply(window.svgVsCanvas);

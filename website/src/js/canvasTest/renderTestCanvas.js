@@ -16,7 +16,7 @@ window.svgVsCanvas = window.svgVsCanvas || {};
 	var maxY;
 
 	function initialize(){
-		containerController.initialize(canvas, objectController);
+		containerController.initialize(canvas, null, objectController);
 		
 		var animationCallbacks = {
 			updateAnimationCallback: updateAnimationCallback,

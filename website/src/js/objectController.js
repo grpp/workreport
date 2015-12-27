@@ -95,23 +95,31 @@ window.svgVsCanvas.controllers = window.svgVsCanvas.controllers || {};
 		}
 	}
 
-	function calculateSize(rows, cols, canvas){
-		var size = canvas.getHeight() / rows;
+	function calculateSize(rows, cols, canvas, svg){
+		var size = {};
+		if(canvas){
+			size = {};
+			size.height = canvas.getHeight() / rows;
+			size.width = canvas.getWidth() / cols;
+		} else if(svg){
+			size.height = 800 / rows;
+			size.width = 800 / cols;
+		}
 
 		return {
-			height: size,
-			width: size,
+			height: size.height,
+			width: size.width,
 		};
 	}
 
-	function create2DArray(rows, cols, canvas){
+	function create2DArray(rows, cols, canvas, svg){
 		listOfObjects = [];
 	    for(var i = 0; i < rows; i++) {
 	        listOfObjects[i] = [];
 	        listOfObjects[i].length = cols;
 	    }
 
-	    var size = calculateSize(rows, cols, canvas);
+	    var size = calculateSize(rows, cols, canvas, svg);
 
 		updateSize(size.height, size.width);
 

@@ -4,7 +4,6 @@ window.svgVsCanvas = window.svgVsCanvas || {};
 (function() {
 	//'use strict';
 	//var _this = this;
-	var canvas = new fabric.StaticCanvas('c', {renderOnAddRemove: false, stateful: false});
 
 	var animationController = window.svgVsCanvas.controllers.animationController;
 	var containerController = window.svgVsCanvas.controllers.containerController;
@@ -14,9 +13,11 @@ window.svgVsCanvas = window.svgVsCanvas || {};
 	var y = 0;
 	var maxX;
 	var maxY;
+	var svg = window.Snap('#svgWrapper');
 
 	function initialize(){
-		containerController.initialize(canvas, objectController);
+
+		containerController.initialize(null, svg, objectController);
 		
 		var animationCallbacks = {
 			updateAnimationCallback: updateAnimationCallback,
@@ -30,7 +31,6 @@ window.svgVsCanvas = window.svgVsCanvas || {};
 	function updateAnimationCallback(){
 		var currentObj = objectController.getObject(x,y);
 		currentObj.updateView();
-		canvas.renderAll();
 
 		if(maxX === x && maxY === y)
 			animationController.animationEnd();
@@ -46,33 +46,41 @@ window.svgVsCanvas = window.svgVsCanvas || {};
 		}
 	}
 
-	function updateView(){
-		var canvasPropertyObject = {
-			left: this.left,
-			top: this.top,
+	function updateView(color){
+		var propertyObject = {
+			x: this.left,
+			y: this.top,
 			width: this.width,
 			height: this.height,
 		};
 
-		this.canvasObj.set(canvasPropertyObject);
+		if (color){
+			this.color = color;
+		} else {
+			this.randomizeColor();
+		}
+
+		propertyObject.fill = this.color;
+
+		var object = svg.select('#' + this.guid);
+		object.attr(propertyObject);
 	}
 
 	function endAnimationCallback(){
 		containerController.deleteAllObjects();
-		canvas.renderAll();
 		containerController.resetSize();
 		x = 0;
 		y = 0;
 	}
 
 	function setupAnimationCallback(){
-		containerController.addRowsAndColumns(20,20);
-		containerController.createAllCanvasObjects();
+		containerController.addRowsAndColumns(100,100);
+		containerController.createAllSVGObjects();
 		var allObjects = objectController.getAllObjects();
 		allObjects.forEach(function(object){
-			object.updateView = updateView;
+			object.updateView = updateView; 
+			object.updateView('black');
 		});
-
 		maxX = containerController.getRowSize() - 1;
 		maxY = containerController.getColumnSize() - 1;
 	}

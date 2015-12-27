@@ -3,7 +3,7 @@ window.svgVsCanvas = window.svgVsCanvas || {};
 
 (function() {
 	//'use strict';
-	var _this = this;
+	//var _this = this;
 	var canvas = new fabric.StaticCanvas('c', {renderOnAddRemove: false, stateful: false});
 
 	var animationController = window.svgVsCanvas.controllers.animationController;
@@ -16,7 +16,7 @@ window.svgVsCanvas = window.svgVsCanvas || {};
 	var maxY;
 
 	function initialize(){
-		containerController.initialize(canvas, objectController);
+		containerController.initialize(canvas, null, objectController);
 		
 		var animationCallbacks = {
 			updateAnimationCallback: updateAnimationCallback,
@@ -74,7 +74,7 @@ window.svgVsCanvas = window.svgVsCanvas || {};
 	}
 
 	function setupAnimationCallback(){
-		containerController.addRowsAndColumns(30,30);
+		containerController.addRowsAndColumns(100,100);
 		containerController.createAllCanvasObjects();
 		var allObjects = objectController.getAllObjects();
 		allObjects.forEach(function(object){
